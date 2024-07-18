@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Zen Maru Gothic", serif; /*Mudar Fonte*/
+}
+
+/*Ver fonte melhor pro nav*/
+/*Editar menu mobile para ficar mais bonito*/
+
+/*Css para criar o menu de navegação*/
+.nav-bar {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+}
+
+#logo img {
+    width: 250px;
+    height: auto; 
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: black;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    border-bottom: 5px solid #d34222;
+}
+
+/*Css para criar o menu responsivo com js*/
+.mobile-menu-icon {
+    display: none;
+}
+
+.menu-mobile {
+    display: none;
+}
+
+/*Css para configurar a imagem do banner*/
+.banner img{
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+/*Css página produtos*/
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 50px;
+    margin: 40px;
+}
+
+.card-produto {
+    overflow: hidden;
+    text-align: center;    
+    border-radius: 3px;
+    box-shadow: 3px 3px 10px #730a573c;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.card-produto:hover {
+    transform: scale(1.07);
+}
+
+.card-produto img{
+    width: 100%;
+    height: auto;
+}
+
+.card-produto a{
+    text-decoration: none;
+    background-color: #730A57;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    display: block;
+    margin: 10px;
+}
+
+.card-produto a:hover {
+    background-color: #730a57bb;
+}
+
+/*Css categorias na aba produtos*/
+
+.titulo-categoria {
+    background-color: #730A57;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.titulo-categoria h1 {
+    font-weight: 100;
+    padding: 5px;
+    margin-top: 15px;
+}
+
+.categorias {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    
+}
+
+.categorias a {
+    display: inline-block;
+    text-decoration: none;
+    color: #730A57;
+    border: 2px solid #730A57;
+    border-radius: 3px;
+    height:30px;
+    width: 120px;
+    text-align: center;
+    font-weight: normal;
+    margin: 10px;
+    text-transform: uppercase;
+}
+
+.categorias a:hover {
+    background-color: #730A57;
+    color: white;
+}
+
+@media screen and (max-width: 730px) {
+    /*Responsividade do menu de navegação*/
+    .nav-bar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .nav-item {
+        display: none;
+        border-top: 2px solid black;
+        margin: 0;
+    }
+
+    .nav-link {
+        font-size: 1rem;
+    }
+
+    .nav-link:hover {
+        border-bottom: none;
+    }
+
+    /*Responsividade do menu de navegação no mobile*/
+    
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu-icon ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .menu-mobile .nav-item {
+        display: block;
+        padding: 0.5rem;
+    }
+
+    .menu-mobile {
+        width: 100%;
+    }
+
+    /*Classe será utilizado pelo js para mostrar o menu responsivo*/
+
+    .open {
+        display: block;
+    }
+    
+    .titulo-categoria h1 {
+        font-size: 1.5rem;
+    }
+    
+}
+
+@media (max-width: 1200px) {
+    .container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+    }
+}
