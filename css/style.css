@@ -9,6 +9,7 @@
 
 /*Ver fonte melhor pro nav*/
 /*Editar menu mobile para ficar mais bonito*/
+/*tabela de tamanhos*/
 
 /*Css para criar o menu de navegação*/
 .nav-bar {
@@ -92,7 +93,8 @@
 
 .card-produto img{
     width: 100%;
-    height: auto;
+    height: 270px;
+    object-fit: cover;
 }
 
 .card-produto a{
@@ -108,6 +110,21 @@
 
 .card-produto a:hover {
     background-color: #730a57bb;
+}
+
+.card-produto h2, p {
+    text-align: left;
+    margin-left: 10px;
+
+}
+.card-produto h2 {
+    font-size: 1.2rem;
+}
+
+.valor {
+    font-weight: bolder;
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
 
 /*Css categorias na aba produtos*/
@@ -130,18 +147,18 @@
     align-items: center;
     justify-content: center;
     margin-top: 40px;
-    
+    flex-wrap: wrap;
 }
 
 .categorias a {
-    display: inline-block;
+    display: flex;
     text-decoration: none;
     color: #730A57;
     border: 2px solid #730A57;
     border-radius: 3px;
     height:30px;
     width: 120px;
-    text-align: center;
+    justify-content: center;
     font-weight: normal;
     margin: 10px;
     text-transform: uppercase;
@@ -150,6 +167,37 @@
 .categorias a:hover {
     background-color: #730A57;
     color: white;
+}
+
+/*Css página do produto*/
+
+.container-produto {
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    margin: 20px;
+    justify-content: space-evenly;
+}
+
+.img-produto {
+    width: 500px;
+    height: auto;
+}
+
+.img-produto img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.info {
+    width: 500px;
+    height: auto;
+}
+
+.info p {
+    margin: 0;
 }
 
 @media screen and (max-width: 730px) {
@@ -211,11 +259,26 @@
     .titulo-categoria h1 {
         font-size: 1.5rem;
     }
-    
+
 }
 
 @media (max-width: 1200px) {
     .container {
         grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .container-produto {
+        grid-template-columns: 1fr; /* Uma coluna para telas menores */
+        gap: 20px;
+    }
+
+    .img-produto {
+        width: 100%; /* Ajustar largura para o contêiner */
+    }
+
+    .info {
+        width: 100%; /* Ajustar largura para o contêiner */
     }
 }
