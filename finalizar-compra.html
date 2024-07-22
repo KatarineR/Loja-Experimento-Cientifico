@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/icon/icon-olho-branco.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Experimento Científico</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div id="logo">
+                <a href="index.html"><img src="img/icon/logo-olho.png" alt="logo olho"></a>
+            </div>
+
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="produtos.html" class="nav-link">Produtos</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Sobre Nós</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="MenuShow()"><img class="icon" src="img/icon/icon-menu-mobile.svg"></button>
+            </div>
+
+            <div class="menu-mobile">
+                <ul>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="produtos.html" class="nav-link">Produtos</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Sobre Nós</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
+                </ul>
+            </div>
+
+        </nav>
+
+        <section class="titulo-categoria">
+            <h1>Entrega</h1>
+        </section>
+
+        <div class="form-container">
+            
+            <form>
+                <div class="form-item">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+                </div>
+                <div class="form-item">
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" id="endereco" name="endereco" placeholder="Digite seu endereço" required>
+                </div>
+                <div class="form-item">
+                    <label for="complemento">Complemento:</label>
+                    <input type="text" id="complemento" name="complemento" placeholder="Apto, Bloco, etc.">
+                </div>
+                <div class="form-item">
+                    <label for="bairro">Bairro:</label>
+                    <input type="text" id="bairro" name="bairro" placeholder="Digite o bairro" required>
+                </div>
+                <div class="form-item">
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" id="cidade" name="cidade" placeholder="Digite a cidade"  required>
+                </div>
+                <div class="form-item">
+                    <label for="estado">Estado:</label>
+                    <input type="text" id="estado" name="estado" placeholder="Digite o estado" required>
+                </div>
+                <div class="form-item">
+                    <label for="cep">CEP:</label>
+                    <input type="text" id="cep" name="cep" placeholder="Digite o CEP" required>
+                </div>
+                <div class="form-item">
+                    <label for="pais">País:</label>
+                    <input type="text" id="pais" name="pais" placeholder="Digite o pais"required>
+                </div>
+                <div class="form-item">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone"  placeholder="(XX) XXXXX-XXXX"  required>
+                </div>
+                <div class="form-item">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                </div>
+                <div class="form-item">
+                    <label for="entrega">Opções de Entrega:</label>
+                    <select id="entrega" name="entrega" required>
+                        <option value="">Selecione uma opção</option>
+                        <option value="padrao">Entrega Padrão</option>
+                        <option value="expresso">Entrega Expresso</option>
+                    </select>
+                </div>
+                <div class="form-item">
+                    <label for="instrucoes">Informações adicionais</label>
+                    <textarea id="instrucoes" name="instrucoes" rows="4" placeholder="Digite instruções adicionais aqui"></textarea>
+                </div>
+                <div class="form-item">
+                    <a href="index.html">Finalizar Compra</a>
+                </div>
+            </form>
+        </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

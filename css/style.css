@@ -50,7 +50,7 @@
 }
 
 .nav-link:hover {
-    border-bottom: 5px solid #d34222;
+    border-bottom: 5px solid #730A57;
 }
 
 /*Css para criar o menu responsivo com js*/
@@ -340,6 +340,52 @@ form {
     font-size: 1.2rem;
     text-align: justify;
     margin: 10px 40px;
+}
+/*Css página entrega*/
+
+
+
+.form-item {
+    margin: 10px;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.form-item  {
+    margin-top: 20px;
+}
+.form-item  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold; /* Adiciona negrito ao rótulo */
+    
+}
+
+.form-item  input, .form-item  select, .form-item  textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 2px solid #730A57;
+}
+
+.form-item a {
+    width: 100%;
+    padding: 8px;
+    background-color: #730A57;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.form-item a:hover {
+    background-color: #730a57ba;
 }
 
 @media screen and (max-width: 730px) {
