@@ -4,12 +4,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Zen Maru Gothic", serif; /*Mudar Fonte*/
+    font-family: "Zen Maru Gothic", serif; 
 }
-
-/*Ver fonte melhor pro nav*/
-/*Editar menu mobile para ficar mais bonito*/
-/*tabela de tamanhos*/
 
 /*Css para criar o menu de navegação*/
 .nav-bar {
@@ -69,6 +65,24 @@
     cursor: pointer;
 }
 
+/*Css destaque index*/
+
+.container-index {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 50px;
+    margin: 40px;
+
+}
+
+.destaque {
+    text-align: center;
+    color: #730A57;
+    margin: 30px;
+    font-weight: normal;
+    font-size: 3rem;
+}
+
 /*Css página produtos*/
 
 .container {
@@ -115,9 +129,7 @@
 .card-produto p {
     text-align: left;
     margin-left: 20px;
-
 }
-
 
 .card-produto h2 {
     font-size: 1.2rem;
@@ -173,7 +185,7 @@
     color: white;
 }
 
-/*Css página do produto*/
+/*Css página individual dos produtos*/
 
 .container-produto {
     display: grid;
@@ -196,6 +208,7 @@
     object-fit: cover;
 }
 
+/*Css informações do produto*/
 .info {
     width: 500px;
     height: auto;
@@ -210,9 +223,7 @@
 .info h3 {
     margin-top: 30px;
 }
-
-/*Css informações do produto*/
-
+/*Css formulário de cor*/
 .form-cor {
     display: flex;
     gap: 10px;
@@ -228,7 +239,7 @@
 .form-cor input[type="radio"] {
     display: none;
 }
-
+ /*Css para modificar a cor do radio button*/
 .color-circle {
     width: 12px;
     height: 12px;
@@ -272,7 +283,7 @@
     background: radial-gradient(circle, #ff5fb4, #7b9cfe);
 }
 
-
+/*Css para a quantidade de produtos*/
 .qtd {
     display: flex;
     gap: 10px;
@@ -293,9 +304,13 @@
     border: 2px solid #730A57;
 }
 
+/*Css para o tamanho da fonte dos formulários*/
+
 form {
     font-size: 1.2rem;
 }
+
+/*Css para o botão de comprar*/
 
 .botao {
     background-color: #730A57;
@@ -314,12 +329,15 @@ form {
     background-color: #730a57be;
 }
 
+/*Css formulário de tamanho*/
+
 .form-tamanho {
     display: flex;
     gap: 20px;
     accent-color: #730A57;
 }
 
+/*Css div frete grátis*/
 .frete {
     background-color: #730A57;
     color: white;
@@ -329,6 +347,8 @@ form {
 .frete p {
     text-align: center;
 }
+
+/*Css descrição dos produtos*/
 
 .descrição {
     margin: 30px 80px;
@@ -346,9 +366,9 @@ form {
     text-align: justify;
     margin: 10px 40px;
 }
-/*Css página entrega*/
 
 
+/*Css página entrega formulário*/
 
 .form-item {
     margin: 10px;
@@ -365,10 +385,11 @@ form {
 .form-item  {
     margin-top: 20px;
 }
+
 .form-item  label {
     display: block;
     margin-bottom: 5px;
-    font-weight: bold; /* Adiciona negrito ao rótulo */
+    font-weight: bold;
     
 }
 
@@ -407,26 +428,44 @@ form {
     text-align: justify;
 }
 
+.footer-sobre-nos {
+    background-color: white;
+    color: #730A57;
+}
+
+.roxo {
+    background-color: #730A57;
+}
+
+/*Css contato*/
+
 .container-contato {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: repeat(2, 1fr); 
     gap: 50px;
     margin: 50px;
     justify-content: space-evenly;
+    
 }
 
 .contato {
-    border: 3px solid #730A57;
     padding: 20px;
-    background-color: #730A57;
-    color: white;
+    border: 2px solid #730A57;
+    color: rgb(0, 0, 0);
     border-radius: 3px;
+    height: 200px;
+}
+
+.contato h2 {
+    font-weight: 100;
 }
 
 .container-contato ul {
     list-style-type: none;
     
 }
+
+/*Css footer*/
 
 footer {
     background-color: #730A57;
@@ -437,31 +476,23 @@ footer {
     width: 100%;
 }
 
-.contato-footer {
-    background-color: #730A57;
-    color: white;
+/*Css imagem tabela de tamahos*/
+
+.tabela {
     display: flex;
+    overflow: hidden;
+    margin: 20px;
+    align-items: center;
     justify-content: center;
-    position: relative;
-    width: 100%;
-    bottom: 0;
 }
 
-.container-index {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 50px;
-    margin: 40px;
-
+.tabela img {
+    display: block; 
+    max-width: 50%;
+    height: auto; 
+    width: auto; /
 }
 
-.destaque {
-    text-align: center;
-    color: #730A57;
-    margin: 30px;
-    font-weight: normal;
-    font-size: 3rem;
-}
 @media screen and (max-width: 730px) {
     /*Responsividade do menu de navegação*/
     .nav-bar {
@@ -520,17 +551,21 @@ footer {
 
     /*Css diversos para */
     
+    /*Css categorias da aba produtos*/
     .titulo-categoria h1 {
         font-size: 1.5rem;
     }
+
+    /*Css destaque index*/
     .destaque {
         font-size: 1.5rem ;
     }
-
+     /*Css tamanho da fonte dos formulários*/
     form {
         font-size: 1rem;
     }
 
+    /*Css margem e alinhamento dos textos ao centro das descrições dos produtos*/
     .descrição {
         margin: 20px;
         text-align: center;
@@ -545,32 +580,65 @@ footer {
         margin: 0 20px;
         font-size: 0.8rem;
     }
-
+    /*Css da div do frete grátis*/
     .frete p {
         font-size: 1rem;
     }
-
+    /*Css para deixar intercalado as imagens e textos da página sobre nós*/
     .reverse {
         display: flex;
         flex-wrap: wrap-reverse;
     } 
-
+    /*Css tamanho da fonte do footer*/
     footer {
         font-size: 0.7rem;
     }
+    /*Css alinhas textos missão, visão, história ao centro*/
+    .info-sobre-nos {
+        text-align: center;
+    }
+    
+    .info-sobre-nos dt {
+        text-align: center;
+    }
 
+    /*Css deixar imagem tabela de medidas maior quando a tela diminuir*/
+    .tabela img {
+        max-width: 100%;
+    }
 }
 
 
-
+/*Responsividade para telas maiores dos produtos*/
 @media (max-width: 1200px) {
     .container {
         grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
     }
 }
+ /*Reponsividade para o contato telas maiores*/
+@media (max-width: 1024px) {
+    .container-contato {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 30px;
+        margin: 30px;
+    }
+}
 
 @media (max-width: 768px) {
-    .container-produto   {
+     /*Reponsividade para o contato celular*/
+    .container-contato {
+        grid-template-columns: 1fr; 
+        gap: 20px;
+        margin: 20px;
+    }
+      /*Reponsividade para os produtos destaques index*/
+    .container-index{
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin: 20px;
+    }
+    /*Responsividade produtos*/
+    .container-produto  {
         grid-template-columns: 1fr; 
         gap: 20px;
     }
@@ -578,32 +646,9 @@ footer {
     .img-produto {
         width: 100%; 
     }
-
+    
     .info {
         width: 100%; 
     }
-}
-
-@media (max-width: 1024px) {
-    .container-contato {
-        grid-template-columns: repeat(2, 1fr); /* Duas colunas em telas menores */
-        gap: 30px;
-        margin: 30px;
-    }
-}
-
-@media (max-width: 768px) {
-    .container-contato {
-        grid-template-columns: 1fr; /* Uma coluna em telas muito pequenas */
-        gap: 20px;
-        margin: 20px;
-    }
-
-    @media (max-width: 768px) {
-        .container-index{
-            grid-template-columns: 1fr; /* Uma coluna em telas muito pequenas */
-            gap: 20px;
-            margin: 20px;
-        }
-    }
+    
 }
