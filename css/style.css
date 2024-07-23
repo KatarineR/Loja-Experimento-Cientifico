@@ -424,6 +424,16 @@ form {
     
 }
 
+footer {
+    background-color: #730A57;
+    color: white;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+}
+
+
 @media screen and (max-width: 730px) {
     /*Responsividade do menu de navegação*/
     .nav-bar {
