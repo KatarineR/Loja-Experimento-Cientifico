@@ -112,13 +112,17 @@
     background-color: #730a57bb;
 }
 
-.card-produto h2, p {
+.card-produto p {
     text-align: left;
-    margin-left: 10px;
+    margin-left: 20px;
 
 }
+
+
 .card-produto h2 {
     font-size: 1.2rem;
+    text-align: left;
+    margin-left: 20px;
 }
 
 .valor {
